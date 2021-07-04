@@ -1,12 +1,125 @@
-.body {
-    width: 50%;
-    margin: 0 auto;
-
+html {
+  font-family: "Patrick Hand", cursive;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-.container {
-    width: 360px;
-
+body {
+  background-color: #FBE6D6;
+  display: flex;
+  padding-top: 10rem;
+  justify-content: center;
+  background-color: #E8EAEE;
 }
 
-.#in
+.header {
+  font-size: 5rem;
+  padding: 2rem 5rem;
+  border: 4px solid #413c3c;
+  border-radius: 65px;
+  color: #2c2828;
+  background-color: #F5BA3F;
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  padding-right: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.form__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.form__container-input {
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 4px solid #2c2828ad;
+  border-radius: 1rem;
+  display: flex;
+  background-color: #F5BA3F;
+  transition: all 0.4s ease;
+  font-size: 2rem;
+  font-family: "Patrick Hand", cursive;
+}
+.form__container-input::placeholder {
+  font-family: "Patrick Hand", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a4a4be0;
+}
+.form__container-input:focus {
+  background-color: #5cccf3;
+  outline: none;
+  border-radius: 2.5rem;
+}
+.form__container-btn {
+  font-size: 2.3rem;
+  width: 26%;
+  margin-left: 10px;
+  background-color: #FB8B8C;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 20px;
+  border: 4px solid #2c2828ad;
+  transition: all 0.15s ease-out;
+}
+.form__container-btn:active {
+  transform: rotate(20deg) scale(0.7);
+}
+
+.newTask {
+  border-radius: 2rem;
+  border: 4px solid #2c2828ad;
+  width: 80%;
+  background-color: #7EBB94;
+  margin-top: 1rem;
+  transition: all 0.3s ease-out;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.newTask:hover {
+  border-radius: 3rem;
+}
+
+.complete {
+  background-color: #5cccf3;
+}
+
+.animation_1 {
+  animation-name: anime_1;
+  animation-duration: 2s;
+  transition: all 1s ease-out;
+}
+
+@keyframes anime_1 {
+  0% {
+    background-color: #F5BA3F;
+  }
+  25% {
+    background-color: #5cccf3;
+  }
+  50% {
+    background-color: #FB8B8C;
+  }
+  75% {
+    background-color: #7EBB94;
+  }
+  100% {
+    background-color: #F5BA3F;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-5.15.3/css/all.css">
 </head>
 <body>
-    <h1>To Do List</h1>
-    <div id="container">
-        <input type="text" id="inputField" >
-        <button id="addToDo" type>+</button>
-        <div class="to-dos" id="toDoContainer">
+    <div class="container">
+        
+        <div class="header">
+            <div class="header__title">TU DU LIST</div>
+            <i class="header__icon far fa-bookmark"></i>
+        </div>
+        <div class="form">
+            <div class="form__container">
+                <input type="text" id="inputField" class="form__container-input" placeholder="Thêm ghi chú ở đây nha!!" >
+                <button id="addToDo" class="form__container-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="to_dos" id="toDoContainer" class="container__1">
+            </div>
         </div>
     </div>
-    <script src="ToDo.js"></script>
+        <script src="ToDo.js"></script>
 </body>
 </html>
